@@ -1,0 +1,14 @@
+section.info-section {
+  min-height: 70vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.info-section h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,32 @@
+.donate * {
+  font-size: medium;
+}
+.donate h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.donate p {
+  max-width: 800px;
+}
+
+.donate b {
+  color: green;
+}
+
+.qr-conatiner {
+  width: 200px;
+  margin: auto;
+}
+
+.qr-conatiner img {
+  width: 100%;
+}
+
+.quote {
+  font-size: 1.3rem;
+  color: green;
+  text-align: center;
+  margin: 2rem;
+  font-family: var(--heading-font);
+}

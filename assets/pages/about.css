@@ -1,0 +1,63 @@
+svg.svg {
+  position: absolute;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.svg-1 {
+  z-index: -1;
+  right: -50vw;
+}
+
+.our-board-members {
+  position: relative;
+  margin-bottom: 6rem !important;
+}
+
+.svg-2 {
+  z-index: -1;
+  left: -20vw;
+}
+.svg-3 {
+  z-index: -1;
+  right: -13vw;
+  top: 92vh;
+}
+section.our-future-plans {
+  position: relative;
+}
+
+section.our-future-plans h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+section.our-future-plans ul {
+  margin: auto;
+}
+
+section.our-future-plans ul li {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+section.our-future-plans ul li::before {
+  content: "";
+  background-color: green;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+
+section.our-future-plans img {
+  border-radius: 30px;
+  padding: 0;
+}

@@ -1,0 +1,72 @@
+section.our-board-members h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.card {
+  position: static;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  width: 600px;
+  max-width: 80vw;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .text img {
+  height: 170px;
+  width: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .text h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card .text p:nth-of-type(1) {
+  color: rgb(35, 182, 219);
+  font-size: 15px;
+  margin-top: -5px;
+}
+
+.card .text p:nth-of-type(2) {
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+}
+
+.card .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card .links i {
+  color: rgb(35, 182, 219);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card .links i:hover {
+  color: rgb(29, 157, 189);
+}

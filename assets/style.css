@@ -1,0 +1,266 @@
+:root {
+  --footer-bg: #5ab736;
+  --footer-gradient: linear-gradient(
+    0deg,
+    rgb(42, 146, 4) 30%,
+    rgba(90, 183, 54, 1) 100%
+  );
+
+  --light-color: #eee;
+  --dark-font: #333;
+  --brand-color-1: rgb(248, 47, 57);
+
+  --heading-font: "Montserrat", sans-serif;
+  --normal-font: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  /* overflow-x: hidden; */
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: var(--dark-font);
+}
+
+p {
+  word-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+p,
+span,
+div,
+li {
+  font-family: var(--normal-font);
+  font-size: 1.05rem;
+}
+/* #5ab736 */
+img {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: var(--dark-font);
+}
+
+a:hover {
+  color: #444;
+}
+
+button {
+  background-color: transparent !important;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none;
+}
+
+/* --------------Navbar------------------ */
+
+nav.main-nav {
+  background-color: var(--brand-color-1);
+  margin: 0;
+}
+
+nav * {
+  color: var(--light-color);
+}
+
+nav ul.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav button {
+  background-color: var(--brand-color-1);
+  padding: 5px 8px;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+nav.main-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  min-width: 100vw;
+  max-width: 100vw;
+}
+nav.top-nav {
+  background-color: rgb(119, 2, 8);
+  width: 100vw;
+  margin: 0;
+}
+
+.top-nav * {
+  font-size: 0.9rem !important;
+}
+/* ------------- haeding - section ------------- */
+
+section.carousel-section {
+  z-index: 0;
+  position: relative;
+}
+section.heading-section * {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section.heading-section .heading {
+  padding: 2rem;
+  background-color: var(--brand-color-1);
+}
+
+section.heading-section .heading h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 3rem 0;
+}
+/* -------------our-vision------------- */
+
+section.our-vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.our-vision h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section.our-vision p {
+  text-align: center;
+  width: 70vw;
+  font-size: 1rem;
+}
+
+/* --------------footer------------------ */
+
+footer {
+  background: var(--footer-bg);
+  background: var(--footer-gradient);
+}
+
+footer * {
+  color: var(--light-color);
+}
+
+footer ul {
+  margin-bottom: 15px;
+}
+
+footer li {
+  padding: 6px;
+}
+
+footer .footer-contact iframe {
+  width: 96%;
+  max-height: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+div.fixed-icons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: darkgreen;
+  flex-direction: row;
+  z-index: 100;
+  display: flex;
+}
+
+div.fixed-icons > ul > li {
+  border: 1px solid white;
+  border-right: none;
+  padding: 4px 2px 8px 8px;
+  display: block;
+}
+
+div.fixed-icons > ul > li:hover {
+  background-color: rgba(255, 81, 0, 0.918);
+}
+
+.carousel-caption * {
+  color: var(--light-color);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+@media screen and (max-width: 756px) {
+  body * {
+    font-size: small;
+  }
+  footer h2 {
+    font-size: medium;
+  }
+  nav.main-nav h4 {
+    font-size: 1rem;
+  }
+  nav ul.nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--brand-color-1);
+    justify-content: start !important;
+    align-items: start !important;
+    padding: 4rem;
+    font-size: 1.4rem;
+    transform: translateX(-100vw);
+    transition: all ease-in-out 0.4s;
+    z-index: 10000 !important;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  nav ul.nav-links li {
+    border-bottom: 2px solid white;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 5px;
+    font-size: 1rem !important;
+  }
+
+  nav .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+  }
+}
