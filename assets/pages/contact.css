@@ -12,6 +12,10 @@ section.contact-us {
   padding: 20px;
 }
 
+.donate-btn > button:hover {
+  border-color: var(--footer-bg);
+}
+
 section.contact-us form {
   display: flex;
   flex-direction: column;
@@ -43,6 +47,7 @@ section.contact-us form button {
   bottom: 0px;
   left: 0px;
   opacity: 0.5;
+  padding: 12px;
 }
 
 .contacts * {
